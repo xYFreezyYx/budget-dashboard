@@ -70,7 +70,9 @@ form > label{
     font-size: 26px;
     color: whitesmoke;
     font-family: Helvetica;
+    box-sizing: border-box;
     background-color: var(--tertiary-color);
+    border: 0;
 }
 
 /*1000px stuff*/
