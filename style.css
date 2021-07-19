@@ -2,6 +2,7 @@
     --primar-color: #13171A;
     --secondary-color: #1B1F22;
     --txt-color: whitesmoke;
+    --tertiary-color: #1F2628;
 }
 
 html, body{
@@ -43,6 +44,33 @@ header{
     margin-top: 10px;
     color: #999;
     font-size: 12px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input{
+    height: 50px;   
+    background-color: var(--tertiary-color);
+    border: 0;
+    color: whitesmoke;
+    font-family: Helvetica;
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+form > label{
+    margin-right: 5px;
+
+    font-size: 26px;
+    color: whitesmoke;
+    font-family: Helvetica;
+    background-color: var(--tertiary-color);
 }
 
 /*1000px stuff*/
