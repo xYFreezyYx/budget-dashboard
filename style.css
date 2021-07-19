@@ -1,0 +1,76 @@
+:root{
+    --primar-color: #13171A;
+    --secondary-color: #1B1F22;
+    --txt-color: whitesmoke;
+}
+
+html, body{
+   height: 100%;
+
+    background-color: var(--primar-color);
+
+    color: var(--txt-color);
+    font-family: Helvetica;
+}
+
+header{
+    height: 60px;
+
+    background-color: var(--secondary-color);
+}
+
+.amount-and-name{
+    color: var(--txt-color);
+}
+
+.list-of-transactions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.transactions{
+    width: calc(20% - 20px);
+    background-color: var(--secondary-color);
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+/*1000px stuff*/
+
+@media (max-width: 1000px){
+    .transactions{
+        width: calc(25% - 18.75px);
+    }
+
+    .transactions:nth-child(4n){
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .transactions:nth-child(5n){
+        margin-right: 0px;
+    }
+}
+
+/*700px stuff*/
+
+@media (max-width: 700px){
+    .transactions{
+        width: calc(50% - 12.5px);
+    }
+
+    .transactions:nth-child(2n){
+        margin-right: 0px;
+    }
+}
+
+/*500px stuff*/
+
+@media (max-width: 500px){
+    .transactions{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
